@@ -1,8 +1,10 @@
 <h1 align = center> Showing All Alpha Bloggers </h1>
-
+<div align = "center">
+  <%= will_paginate %>
+</div>
 <div class = "top-space center">
 
-    <%= @users.each do |user| %>
+    <% @users.each do |user| %>
 
         <div class = "row">
             <div class = "well col-xs-4 col-xs-offset-4 center">
@@ -15,6 +17,8 @@
             </div>
         </div>
 
-
     <% end %>
+</div>
+ <div align = "center">
+  <%= will_paginate %>
 </div>

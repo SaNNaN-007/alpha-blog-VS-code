@@ -1,0 +1,20 @@
+<h1 align = center> Showing All Alpha Bloggers </h1>
+
+<div class = "top-space center">
+
+    <%= @users.each do |user| %>
+
+        <div class = "row">
+            <div class = "well col-xs-4 col-xs-offset-4 center">
+                <div class = "listing">
+                    <li><%= link_to gravatar_for(user), user_path(user) %></li>
+                    <li><%= link_to user.username, user_path(user) %></li>
+
+                    <li><%= pluralize(user.articles.count, "article") if user.articles %></li>
+                </div>
+            </div>
+        </div>
+
+
+    <% end %>
+</div>

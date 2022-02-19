@@ -75,6 +75,17 @@ body {
   list-style: none;
 }
 
+.badge {
+  background-color: #CEF6F5;
+  letter-spacing: -1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
 //-------------- FOOTER
 
 footer {

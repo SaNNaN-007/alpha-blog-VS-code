@@ -1,5 +1,11 @@
 <h1 align = "center"> <%= "Category: " + @category.name %> </h1>
 
+<% if logged_in? and current_user.admin? %>
+
+    <h4 align = "center"> <%= link_to "Edit Category", edit_category_path(@category) %> </h4>
+
+<% end %>
+
 <div align = "center">
   <%= will_paginate @category_articles%>
 </div>
